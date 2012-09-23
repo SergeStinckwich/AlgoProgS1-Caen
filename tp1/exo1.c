@@ -9,7 +9,7 @@ int main(void){
   printf("Quelle est la date d'aujourd'hui (jour/mois/annee) ? ");
   scanf("%d / %d / %d", &dayOfToday, &monthOfToday, &yearOfToday);
   if(monthOfToday>monthOfBirth || (monthOfToday == monthOfBirth && dayOfToday >= dayOfBirth)){
-    printf("\nVous avez %d ans.\n",yearOfToday-yearOfBirth);
+    printf("\nVous avez %d ans.\n", yearOfToday-yearOfBirth);
   }
   else {
     printf("\nVous avez %d ans.\n", yearOfToday-yearOfBirth-1);
