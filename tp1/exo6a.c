@@ -11,4 +11,3 @@ int main(void){
   netSalary = grossSalary-charges;
   printf("\nVotre salaire brut est %f.\nVotre salaire net est %f.\n", grossSalary, netSalary);
 }
-

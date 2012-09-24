@@ -3,7 +3,7 @@
 int main(void){
   int age;
   printf("Quel est votre age  ?  ");
-  scanf("%d",&age);
+  scanf("%d", &age);
   printf("\nVous etes ");
   if (age<11){
     printf("un enfant");
