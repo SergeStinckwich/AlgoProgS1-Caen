@@ -4,8 +4,9 @@ int main(void)
 char previousChar, currentChar;
 char stopChar = '.';
 int nbDouble = 0;
+const char* askToEnterASentence = "Entrer une phrase finie par un point.";
 
-printf("Entrer une phrase finie par un point.\n");
+printf("%s\n", askToEnterASentence);
 scanf("%c", &currentChar);
 
 while (currentChar != stopChar)
