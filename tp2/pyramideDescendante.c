@@ -9,7 +9,7 @@ scanf("%d", &nbLines);
 for (int i=0; i<=nbLines; i++)
 	{
 		for(int j=0; j<=i; j++)
-			printf("%d", j);
+			printf("%d", j%10);
 		printf("\n");
 	}
 }
