@@ -15,6 +15,9 @@ while (currentChar != stopChar)
 	scanf("%c", &currentChar);
 	if (currentChar == previousChar)
 		nbDouble++;
+	// for lower and uppercase
+	if (currentChar-32 == previousChar)
+		nbDouble++;
 }
 printf("Nombre de lettres en double: %d\n", nbDouble);
 }
