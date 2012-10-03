@@ -24,5 +24,5 @@ int main(void)
 	}
 	while ((value > valueMax)||(value < valueMin));
 
-printf("La valeur %d est bien comprise entre %d et %d\n", value, valueMin, valueMax);
+	printf("La valeur %d est bien comprise entre %d et %d\n", value, valueMin, valueMax);
 }
