@@ -93,9 +93,15 @@ jouer à plusieurs en réseau, une version pour jouer à plusieurs sur Internet.
 
 \section{Notes de mise en {\oe}uvre}
 
-Dans un premier temps, définissez les principales structures de données dont vous allez avoir besoin pour représenter les éléments du jeu: cartes, tortues, plateau de jeu. En parallèle, construire les fonctions associés à ces structures de données.
-Dans un deuxième temps, définissez la boucle de contrôle globale du jeu assurant les différentes phases du jeu.
+Dans un premier temps, définissez les principales structures de données dont vous allez avoir besoin pour représenter les éléments du jeu: carte, tortue, joueur, pioche, plateau de jeu et gestionnaire de jeu (contenant les informations globales concernant l'état du jeu courant). Pour chaque structure de données, définir les données correspondantes: par exemple une carte est définie par une valeur et une couleur et les fonctions associées : par exemple la fonction jouerUneCarte(j) pour le joueur j ou piocherCarte(p) pour piocher une carte dans la pioche p.
+
+Dans un deuxième temps, définir la boucle de contrôle globale du jeu qui assurent les différentes phases du jeu.
+
+Pour les besoins du jeu, il pourra être utile de définir un joueur aléatoire qui joue aléatoirement en fonction des cartes dont il dispose.
+
 Il est conseillé d'avoir en permanence un programme qui compile et qui définit une version partielle du jeu.
+
+Si vous souhaitez développer une version graphique de votre programme, il est préférable de définir une version non graphique afin de bien séparer les fonctions associées au jeu et l'affichage graphique du jeu.
 
 \section{Travail à rendre}
 Le projet est à réaliser en binômes (ou, avec l'accord de votre 
