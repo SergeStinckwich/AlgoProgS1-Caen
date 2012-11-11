@@ -4,27 +4,27 @@ int main(void)
 
 {
 	int maxIntValue;
-	int long maxLongValue;
 	int x,y;
 
 	printf("Nombre d'octets pour int =%d\n", (int)sizeof(int));
 
-	x = 256;
-	y = (int)sizeof(int)-1;
+	x = 2;
+	y = (int)sizeof(int)*8 - 1;
 	maxIntValue = 1;
 	for (int i=1; i<=y; i++)
 		maxIntValue = maxIntValue*x;
 
-	printf("Valeur maximale pour int =%d\n",maxIntValue);
+	printf("Valeur maximale pour int =%d\n",maxIntValue-1);
 
 	printf("Nombre d'octets pour long =%d\n", (int)sizeof(long));
 
-	x = 256;
-	y = (int)sizeof(long)-1;
+	long maxLongValue;
+	x = 2;
+	y = (int)sizeof(long)*8 - 1;
 	maxLongValue = 1;
 	for (int i=1; i<=y; i++)
-		maxIntValue = maxLongValue*x;
+		maxLongValue = maxLongValue*x;
 
-	printf("Valeur maximale pour long =%ld\n",maxLongValue);
+	printf("Valeur maximale pour int =%ld\n",maxLongValue-1);
 
 }
