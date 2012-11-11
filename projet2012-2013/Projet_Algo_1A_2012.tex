@@ -27,7 +27,7 @@
 \newcommand{\COMMENT}[1]{}
 
 %% Le titre du papier
-\title{Projet 1A : \textsc{Schildkrötenrennen \\ La course des tortues }}
+\title{Projet 1A : \textsc{Algorithmique-Programmation \\ La course des tortues }}
 \author{IUT CAEN -- Département Informatique}
 
 \begin{document}
@@ -40,102 +40,100 @@
 Il s'agit d'un jeu de plateau dont les règles sont suffisamment
 simples pour être joué à partir de 3 ans : La Course des Tortues.
 
-Le plateau de jeu est compos\'e de $10$ cases dont un d\'epart et une
-arriv\'ee (au milieu d'un champ de laitues, par exemple). Il y a $5$
-tortues de couleurs diff\'erentes (vert, jaune, bleu, rouge, violet).
-Chaque joueur se voit attribuer une tortue, mais il est le seul \`a
-savoir quelle est sa tortue. Il poss\`ede \'egalement $5$ cartes en main.
-Toutes les tortues, m\^eme celles qui ne sont affect\'ees \`a aucun
+Le plateau de jeu est composé de $10$ cases dont un départ et une
+arrivée (au milieu d'un champ de laitues, par exemple). Il y a $5$
+tortues de couleurs différentes (vert, jaune, bleu, rouge, violet).
+Chaque joueur se voit attribuer une tortue, mais il est le seul à
+savoir quelle est sa tortue. Il possède également $5$ cartes en main.
+Toutes les tortues, même celles qui ne sont affectées à aucun
 joueur sont mises en jeu.
 
 Les $72$ cartes ont une couleur et une valeur. Les valeurs sont $+2$, $+1$
-et $-1$. Les couleurs sont celles des tortues et une couleur sp\'eciale
-correspondant \`a la derni\`ere tortue. Leur r\'epartition par couleur (y
-compris la couleur sp\'eciale) est la suivante :
+et $-1$. Les couleurs sont celles des tortues et une couleur spéciale
+correspondant à la dernière tortue. Leur répartition par couleur (y
+compris la couleur spéciale) est la suivante :
 \begin{itemize}
 \item $5$ cartes $+2$
 \item  $5$ cartes $+1$
 \item $2$ cartes $-1$
 \end{itemize}
-
-Chaque joueur joue une carte \`a son tour et avance (ou recule) la
-tortue correspondant \`a la couleur de la carte (ou la ou les derni\'ere
-des tortues pour la couleur sp\'eciale) du nombre de case sp\'ecifi\'e
+Chaque joueur joue une carte à son tour et avance (ou recule) la
+tortue correspondant à la couleur de la carte (ou la ou les dernières
+des tortues pour la couleur spéciale) du nombre de case spécifié
 par la valeur de la carte (1 ou deux cases). Une nouvelle carte est
-pioch\'ee \`a la fin de chaque tour.
+piochée à la fin de chaque tour.
 
-L'astuce est que les tortues partent superpos\'ees et qu'une tortue qui
+L'astuce est que les tortues partent superposées et qu'une tortue qui
 avance emporte toutes celles qui sont sur son dos. Lorsqu'une tortue
-arrive sur une case occup\'ee, elle est plac\'ee sur le dos de la tortue
-qui \'etait d\'ej\`a sur la case.
+arrive sur une case occupée, elle est placée sur le dos de la tortue
+qui était déjà sur la case.
 
-Le jeu s'arr\^ete lorsqu'une tortue arrive ou d\'epasse la case
-d'arriv\'ee. Le joueur poss\'edant la tortue la plus proche de
-l'arriv\'ee a gagn\'e. En cas d'\'egalit\'e, c'est la tortue la plus en
+Le jeu s'arrête lorsqu'une tortue arrive ou dépasse la case
+d'arrivée. Le joueur possédant la tortue la plus proche de
+l'arrivée a gagné. En cas d'égalité, c'est la tortue la plus en
 dessous qui gagne.
 
-
-\section{Fonctionnalit\'es \`a impl\'ementer}
-
-Votre programme devra permettre de visualiser une s\'equence de jeu
-en affichant \`a chaque tour : le joueur, la carte jou\'ee et les
-positions des tortues apr\`es chaque tour (Joueur1, Carte rouge +2,
+\section{Fonctionnalités à implémenter}
+Votre programme devra permettre de visualiser une séquence de jeu
+en affichant à chaque tour : le joueur, la carte jouée et les
+positions des tortues après chaque tour (Joueur1, Carte rouge +2,
 Tortue Jaune : case 2, Tortue Rouge : Case 2 sur Tortue Jaune, Tortue
-Verte : Case D?part, etc). 
+Verte : Case Départ, etc).
 
-On pourra faire une fonction qui \`a chaque tour choisira une carte
-al\'eatoirement dans le jeu du joueur et d\'eplacera les tortues en
-cons\'equence en montrant textuellement la position des tortues apr\`es
-leur d\'eplacement. Ne pas oublier que l'on pioche \`a chaque tour pour
-avoir une main compl\`ete au prochain tour. Les cartes jou\'ees sont
-r\'einject\'ees sous la pioche.
+On pourra faire une fonction qui à chaque tour choisira une carte
+aléatoirement dans le jeu du joueur et déplacera les tortues en
+conséquence en montrant textuellement la position des tortues après
+leur déplacement. Ne pas oublier que l'on pioche à chaque tour pour
+avoir une main complète au prochain tour. Les cartes jouées sont
+réinjectées sous la pioche.
 
-
-Pour ceux qui veulent aller plus loin, vous pouvez r\'ealiser au choix
+Pour ceux qui veulent aller plus loin, vous pouvez réaliser au choix
 : des graphiques avec animation, une version en 3D, une version pour
-jouer \`a plusieurs en r\'eseau, une version pour jouer \`a plusieurs sur
-un site web.
-
+jouer à plusieurs en réseau, une version pour jouer à plusieurs sur Internet.
 
 \section{Notes de mise en {\oe}uvre}
 
-\section{Travail \`a rendre}
-Le projet est \`a r\'ealiser en bin\^omes (ou, avec l'accord de votre 
-charg\'e de TP, en mon\^ome). Le travail \`a rendre est un projet sous forme 
-d'une archive zip {\bf \`a envoyer par mail \`a votre charg\'e de TP}. 
+Dans un premier temps, définissez les principales structures de données dont vous allez avoir besoin pour représenter les éléments du jeu: cartes, tortues, plateau de jeu. En parallèle, construire les fonctions associés à ces structures de données.
+Dans un deuxième temps, définissez la boucle de contrôle globale du jeu assurant les différentes phases du jeu.
+Il est conseillé d'avoir en permanence un programme qui compile et qui définit une version partielle du jeu.
+
+\section{Travail à rendre}
+Le projet est à réaliser en binômes (ou, avec l'accord de votre 
+chargé de TP, en monôme). Le travail à rendre est un projet sous forme 
+d'une archive zip {\bf à envoyer par mail à votre enseignant chargé de TP}. 
 
 \medskip
 \noindent
 Le nom de l'archive doit avoir la forme suivante~: \texttt{Nom1Nom2.grTP.zip} ou 
-\texttt{Nom1.grTP.zip} o\`u \texttt{Nom1} et \texttt{Nom2} sont les noms de 
-famille des membres des polyn\^omes et \texttt{grTP} est le nom du groupe de TP 
-auquel ils appartiennent (1.1, 1.2, etc.). 
+\texttt{Nom1.grTP.zip} où \texttt{Nom1} et \texttt{Nom2} sont les noms de 
+famille des membres des polynômes et \texttt{grTP} est le nom du groupe de TP 
+auquel ils appartiennent (1.1, 1.2, etc.).
 
 \medskip
 \noindent
-{\bf Note}: Lors des s\'eances de TP, les charg\'es de TP suivront l'avancement de votre projet et pourront vous aider sur certains points difficiles.
+{\bf Note}: Lors des séances de TP, les enseignants chargés de TP suivront l'avancement de votre projet et pourront vous aider sur certains points difficiles.
 
 \subsection*{Ce qu'il faut rendre~:}
 \begin{itemize}
-\item Le code source complet de votre application en C largement comment\'e.
+\item Le code source complet de votre application en C largement commenté.
 
-\item Un ex\'ecutable test\'e \textbf{sous Linux} et op\'erationnel avec sa documentation d'installation. 
+\item Un exécutable test\'e \textbf{sous Linux} et opérationnel avec sa documentation d'installation et d'utilisation. 
 
-\underline{\bf ATTENTION} : 
-si votre programme fait appel \`a d'autres librairies externes (comme par exemple 
-les librairies du SDL), il est imp\'eratif de les inclures pour les besoins de test. 
+\underline{\bf ATTENTION} :
+si votre programme fait appel à d'autres librairies externes (comme par exemple 
+la librairie SDL), il est impératif de les inclure pour les besoins de test. 
 
-\item Un court rapport d'une longueur comprise entre 3 et 10 pages pr\'esentant :
+\item Un court rapport d'une longueur comprise entre 3 et 10 pages présentant :
   \begin{itemize}
-    \item les fonctionnalit\'es impl\'ement\'ees (tr\`es bri\`evement).
-    \item organisation du programme : d\'ecoupage en fonctions, r\^ole de 
+    \item les fonctionnalités implémentées (très brièvement).
+    \item organisation du programme : découpage en fonctions, rôle de 
       ces fonctions, explications du programme. 
-    \item l'organisation et la r\'epartition des t\^aches au sein du bin\^ome 
-      durant la dur\'ee du projet (bri\`evement).
-    \item bilan qualitatif du travail, difficult\'es rencontr\'ees, points qui 
-      vous ont paru int\'eressants. 
-    \item un mode d'emploi avec quelques illustrations (p. ex. capture d'\'ecrans, 
-      sc\'enario d'ex\'ecution...), destin\'ees \`a montrer l'op\'erationnalit\'e 
+    \item l'organisation et la répartition des tâches au sein du binôme 
+      durant la durée du projet (brièvement).
+    \item bilan qualitatif du travail, difficultés rencontrées, points qui 
+      vous ont paru intéressants. 
+    \item un mode d'emploi avec quelques illustrations (p. ex. capture d'écrans, 
+      scénario d'exécution...), destinées à montrer l'opérationnalité 
       de votre application.
     \item Une conclusion sur l'apport (ou non) du projet en termes technique,
       scientifique, humain. 
@@ -145,20 +143,20 @@ les librairies du SDL), il est imp\'eratif de les inclures pour les besoins de t
 (sinon en annexe)}.
 \end{itemize}
 
-\section{\'Evaluation du projet et calendrier}
+\section{Évaluation du projet et calendrier}
 
-Le projet est \`a rendre le \underline{\bf vendredi 11 janvier 2013} 
-(tout retard conduira \`a des p\'enalit\'es). L'\'evaluation sera r\'ealis\'ee en focntion 
-des crit\`eres ci-dessous~:
+Le projet est à rendre le \underline{\bf vendredi 11 janvier 2013} 
+(tout retard conduira à des pénalités). L'évaluation sera réalisée en fonction 
+des critères ci-dessous~:
 \begin{itemize}
 
-\item  \textit{qualit\'e technique du code}~: d\'ecoupage en fonctions, modularit\'e et r\'eutilisabit\'e, instructions, algorithmes, efficacit\'e, gestion des erreurs lors de d'une saisie, ou lorsque les donn\'ees fournies en param\`etres des fonctions sont incorrectes.
+\item  \textit{qualité technique du code}~: découpage en fonctions, modularité et réutilisabité, instructions, algorithmes, efficacité, gestion des erreurs lors de saisies, ou lorsque les données fournies en paramètres des fonctions sont incorrectes.
 
-\item \textit{lisibilit\'e du code}~: pr\'esentation du programme (indentation), usage de variables ayant des noms explicites, commentaires pour pr\'eciser les points difficiles dans les algorithmes, param\`etres des fonctions $\ldots$ 
+\item \textit{lisibilité du code}~: présentation du programme (indentation), usage de variables et de fonctions ayant des noms explicites, commentaires pour préciser les points difficiles dans les algorithmes, paramètres des fonctions $\ldots$ 
 
 \item \textit{documentation fournie}~: organisation du programme et son mode d'emploi, bilan.
 
-\item \textit{pr\'esentation orale}~: d\'emonstration du programme et questions sur le travail r\'ealis\'e.
+\item \textit{présentation orale}~: démonstration du programme et questions sur le travail r\'ealis\'e.
 
 
 \end{itemize}
