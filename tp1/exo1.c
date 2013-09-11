@@ -14,4 +14,5 @@ int main(void){
   else {
     printf("\nVous avez %d ans.\n", yearOfToday-yearOfBirth-1);
   }
+  return 0;
 }
