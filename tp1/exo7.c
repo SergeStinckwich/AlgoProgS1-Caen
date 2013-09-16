@@ -2,10 +2,26 @@
 
 int main(void){
   int day, month;
-  printf("Entrez votre jour de naissance : ");
-  scanf("%d", &day);
-  printf("Entrez votre mois de naissance : ");
-  scanf("%d", &month);
+  
+  int birthDayOk = 0;
+
+// Mois en 31 jours : Janvier(1), Mars(3), Mai(5), Juillet(7), Aout(8), Octobre(10), Decembre(12)
+// Mois en 30 jours : Avril (4), Juin (6), Septembre (7), Novembre(11)
+// Mois en 28 ou 29 jours : Février (2)
+
+  while (!birthDayOk){
+  	printf("Entrez votre jour de naissance : ");
+  	scanf("%d", &day);
+  	printf("Entrez votre mois de naissance : ");
+  	scanf("%d", &month);
+  	birthDayOk = ((month>=1)&&(month<=12)&&
+  				(day>=1)&&
+  				(((day<=31)&&((month==1)||(month==3)||(month==5)||(month==7)||(month==8)||(month==10)||(month==12)))||
+  				((day<=30)&&((month==4)||(month==6)||(month==7)||(month==11)))||
+  				((day<=29)&&(month==2)))
+  				);
+}
+
   printf("\nVous etes du signe du ");
   if((month==3 && day>=21) || (month==4 && day<=21)){
     printf("Belier");
