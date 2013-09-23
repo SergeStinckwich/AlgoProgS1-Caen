@@ -32,6 +32,7 @@ while (!dateValide){
 	if (!dateValide) printf("Date invalide !\n");
 }
 
+// Afficher le signe en fonction de la date
 printf("Votre signe est: ");
   if((mois==3 && jour>=21) || (mois==4 && jour<=21)) printf("Belier");
   if((mois==4 && jour>=22) || (mois==5 && jour<=21)) printf("Taureau");

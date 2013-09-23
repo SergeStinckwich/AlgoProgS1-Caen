@@ -15,16 +15,17 @@ int main(void)
 		nEstPositif = (n > 0);
 	}
 
+	int m=0;
 	finDecompte = 0;
 	while (!finDecompte){
+		m = m + 1;
 		// Affichage d'une ligne de n étoiles
 		int i;
-		for (i=1; i<=n; i++)
+		for (i=1; i<=m; i++)
 			printf("*");
 		// Passage à la ligne entre chaque ligne d'étoiles
 		printf("\n");
-		n = n - 1;
-		finDecompte = (n == 0);
+		finDecompte = (m == n);
 	}
 
 	return 0;

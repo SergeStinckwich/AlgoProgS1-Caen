@@ -1,26 +1,22 @@
 #include <stdio.h>
 
-int main(void)
+int main(void){
+	int x,y;
+	int entreeValide;
 
-{
-	int nb1, nb2;
-
-	int unPositifUnNegatif;
-	unPositifUnNegatif = 0;
-	while (!unPositifUnNegatif){
-	// Lire les deux nombres
-		printf("Entrer deux nombres (un positif et un négatif)\n");
-		printf("Nombre1=?");
-		scanf("%d", &nb1);
-		printf("Nombre2=?");
-		scanf("%d", &nb2);
-		unPositifUnNegatif = (((nb1 < 0)&&(nb2 >= 0))||((nb1 >= 0)&&(nb2 < 0)));
-		printf("%d\n",unPositifUnNegatif);
+	entreeValide = 0; // faux
+// Lire les deux nombres x et y jusqu'à validité
+	while(!entreeValide){
+		printf("x=?");
+		scanf("%d", &x);
+		printf("y=?");
+		scanf("%d", &y);
+		entreeValide = (((x>=0)&&(y<0))||((x<0)&&(y>=0)));
 	}
 
-	// Afficher le nombre négatif
+// Afficher le nombre négatif
+	if (x<0) printf("Nombre négatif=%d\n", x);
+	else printf("Nombre négatif=%d\n", y);
 
-	if (nb1 < 0 ) printf("Nombre négatif=%d\n", nb1);
-			else printf("Nombre négatif=%d\n", nb2);
-  return 0;
+return 0;
 }
