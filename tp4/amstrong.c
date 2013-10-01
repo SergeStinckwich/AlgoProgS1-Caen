@@ -7,17 +7,17 @@ int main(void){
 	int unites, dizaines, centaines, milliers;
 	int i;
 
-	printf("Nombres d'Amstrong inférieurs à 100000:");
+	printf("Nombres d'Amstrong inférieurs à 10000:");
 
 	for (i=1; i<=9; i++){
 		unites = i%10;
-		if (unites == i) printf ("%5d", i);
+		if (unites == i) printf ("%4d\n", i);
 	}
 	for (i=10; i<=99; i++){
 		unites = i%10;
 		dizaines = (i/10)%10;
 		if (unites*unites+dizaines*dizaines == i)
-			printf ("%5d", i);
+			printf ("%4d\n", i);
 	}
 	for (i=100; i<=999; i++){
 		unites = i%10;
@@ -26,7 +26,7 @@ int main(void){
 		if (unites*unites*unites+
 			dizaines*dizaines*dizaines+
 			centaines*centaines*centaines == i)
-			printf ("%5d", i);
+			printf ("%4d\n", i);
 	}
 	for (i=1000; i<=9999; i++){
 		unites = i%10;
@@ -37,7 +37,8 @@ int main(void){
 			dizaines*dizaines*dizaines*dizaines+
 			centaines*centaines*centaines*centaines+
 			milliers*milliers*milliers*milliers
-			== i) printf("%5d ", i);
+			== i) printf("%4d\n", i);
 	}
 printf("\n");
+return 0;
 }
