@@ -4,6 +4,7 @@ int main(void)
 {
 // Entrer les bornes inf et sup d'un intervalle
 // Déterminer si une valeur n est comprise dans cet intervalle
+
 	int inf, sup; // bornes inf et supérieure d'un intervalle
 	int n;
 	int intervalleOk;
@@ -40,7 +41,7 @@ int main(void)
 		scanf("%d", &inf1);
 		printf("Borne sup=?");
 		scanf("%d", &sup1);
-		intervalleOk = (inf<=sup);
+		intervalleOk = (inf1<=sup1);
 		if (!intervalleOk) printf("Intervalle incorrect\n");
 	}
 
@@ -50,7 +51,7 @@ int main(void)
 		scanf("%d", &inf2);
 		printf("Borne sup=?");
 		scanf("%d", &sup2);
-		intervalleOk = (inf<=sup);
+		intervalleOk = (inf2<=sup2);
 		if (!intervalleOk) printf("Intervalle incorrect\n");
 	}
 
