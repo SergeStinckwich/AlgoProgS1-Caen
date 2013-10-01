@@ -62,11 +62,11 @@ int main(void)
 			printf("L'intervalle [%d, %d] est apres [%d, %d].",
 				inf1, sup1, inf2, sup2);
 	if (((inf2>=inf1)&&(sup2<=sup1)))
-		printf("L'intervalle [%d, %d] est inclue dans [%d, %d].",
+		printf("L'intervalle [%d, %d] est inclu dans [%d, %d].",
 			inf2, sup2, inf1, sup1);
 	else
 		if (((inf1>=inf2))&&(sup1<=sup2))
-		printf("L'intervalle [%d, %d] est inclue dans [%d, %d].",
+		printf("L'intervalle [%d, %d] est inclu dans [%d, %d].",
 			inf1, sup1, inf2, sup2);
 		else
 			if (((inf2>=inf1)&&(inf2<=sup1))||((sup1>=inf2)&&(sup1<=sup2)))
