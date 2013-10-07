@@ -2,9 +2,13 @@
 
 int main(int argc, char const *argv[])
 {
-
+	// Test 1
+	//	char phrase1[]="ordinateur\0";
+	//	char phrase2[]="dur notaire\0";
+	// Test 2
 	char phrase1[]="orxinateur\0";
 	char phrase2[]="dur notaire\0";
+
 	int i,j;
 	char courant1, courant2;
 	int trouve;
@@ -38,7 +42,7 @@ int main(int argc, char const *argv[])
 			}
 	}
 
-	if (trouve) printf("Les caractères de phrase1 apparaissent au moins dans phrase2\n");
+	if (trouve) printf("Les caractères de phrase1 apparaissent au moins une fois dans phrase2\n");
 	if (!trouve) printf("Caractères de phrase1 qui n'apparaissent pas au moins dans phrase2\n");
 	return 0;
 }
