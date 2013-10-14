@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.20)  14 OCT 2013 07:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.20)  14 OCT 2013 07:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,42 +692,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 41.
-
-Overfull \hbox (12.11708pt too wide) in paragraph at lines 59--61
-[]\T1/ptm/m/n/10 La ver-sion com-plète du jeu dé-crite ici : []$\T1/pcr/m/n/10 
-https : / / fr . wikipedia . org / wiki / Ricochet _ Robots$[]
- []
-
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 81.
-[1
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 78.
+ [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 97.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 94.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.143 \end{document}
+l.140 \end{document}
                      [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
  (./Projet_Algo_1A_2012.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
 Package rerunfilecheck Info: File `Projet_Algo_1A_2012.out' has not changed.
 (rerunfilecheck)             Checksum: 80B6851065BF8674B17844FB282371DB;242.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
  6799 strings out of 493311
  97101 string characters out of 6137850
- 182470 words of memory out of 5000000
+ 183470 words of memory out of 5000000
  10159 multiletter control sequences out of 15000+600000
  35300 words of font info for 51 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 33i,6n,29p,429b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,6n,29p,429b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/20
@@ -735,7 +729,7 @@ xlive/2013/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/20
 -dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on Projet_Algo_1A_2012.pdf (2 pages, 71726 bytes).
+Output written on Projet_Algo_1A_2012.pdf (2 pages, 72010 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

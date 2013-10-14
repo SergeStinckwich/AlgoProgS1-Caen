@@ -38,32 +38,27 @@
 
 \section{Description du projet}
 
-On se propose de réaliser une variante du jeu {\bf Ricochets Robots} : \url{https://fr.wikipedia.org/wiki/Ricochet_Robots}.
-Il s'agit d'un jeu de plateau qui peut se jouer seul ou à plusieurs.
+On se propose dans un premier temps de réaliser une variante du jeu {\bf Ricochets Robots} : \url{https://fr.wikipedia.org/wiki/Ricochet_Robots}. La variante que l'on veut réaliser se joue jeul.
 
 Le jeu se joue sur une grille fermée de 16 par 16 cellules avec 4 robots de couleurs différentes (rouge, vert,
-bleu, gris), un ensemble d'obstacles (murs) et une cible qui se trouve dans une cellule de la grille.
+bleu, gris), un ensemble d'obstacles (murs) et un objectif qui se trouve dans une cellule de la grille.
 
 Pour déplacer un robot, le joueur choisit une direction (Nord, Sud, Est, Ouest) et le robot
 se déplace en ligne droite jusqu'à rencontrer un obstacle ou un robot. Le but du jeu
-est de déplacer chacun à leur tour les 4 robots afin d'atteindre la cible en s'aidant éventuellement des autres robots. Voir des exemples de grilles de jeu ici :
+est de déplacer chacun à leur tour les 4 robots afin d'atteindre l'objectif en s'aidant éventuellement des autres robots. Une fois la mission des 4 robots réalisées, on déterminera le score du joueur par le nombre de déplacements nécessaires.
+
+Les grilles seront construites de manière aléatoire, éditées par un utilisateur ou bien prédéfinies. 
+Trois grilles grilles prédéfinies seront proposées par votre programme. On trouvera des exemples de grilles de jeu ici :
 \url{http://jeux.prise2tete.fr/p2t-ricochet/p2t-ricochet.php5}.
 
-Seul sont autorisés des versions textuelles de ce jeu.
-Le programme devra permettre de visualiser la partie et de gérer un
-système de high-scores.
+Les positions initiales des robots seront tirées aléatoirement pour les ou bien choisies lors de l'édition de la grille ou encore déterminés à priori lors de grilles prédéfinies.
 
-Les grilles seront construites de manière aléatoire ou bien éditée par
-un utilisateur. Un mode joueur aléatoire pourra être implémenté.
+ Une fois que la version solitaire fonctionnera, on réalisera une version multi-joueurs à partir de la description du jeu ici :
+\url{https://fr.wikipedia.org/wiki/Ricochet_Robots}. Le programme final devra permettre de jouer à ces deux versions.
 
-La version complète du jeu décrite ici :
-\url{https://fr.wikipedia.org/wiki/Ricochet_Robots} pourra être réalisée dans un deuxième temps.
+Votre programme devra permettre de visualiser une séquence de jeu en affichant à chaque tour : le plateau de jeu, qui doit jouer (dans le cas de la version à plusieurs joueurs), le score courant du joueur (ou des joueurs).
 
-Votre programme devra permettre de visualiser une séquence de jeu en affichant à chaque tour : le plateau de jeu, qui doit jouer (dans le cas de la version à plusieurs joueurs), le score des joueurs.
-
-Pour ceux qui veulent aller plus loin, vous pouvez réaliser au choix
-: des graphiques avec animation, une version en 3D, une version pour
-jouer à plusieurs en réseau, une version pour jouer à plusieurs sur Internet.
+Pour ceux qui veulent aller plus loin, vous pouvez réaliser au choix: des graphiques avec animation, une version en 3D, une version pour jouer à plusieurs en réseau, une version pour jouer à plusieurs sur Internet.
 
 \section{Notes de mise en {\oe}uvre}
 
@@ -71,9 +66,11 @@ Dans un premier temps, définissez les principales structures de données dont v
 
 Dans un deuxième temps, définir la boucle de contrôle globale du jeu qui assurent les différentes phases du jeu.
 
-Pour les besoins du jeu, il pourra être utile de définir un joueur aléatoire qui joue aléatoirement.
+Pour les besoins du jeu, il est demandé de réaliser un joueur aléatoire qui joue aléatoirement.
 
 Il est conseillé d'avoir en permanence un programme qui compile et qui définit une version partielle du jeu.
+
+Seul devront être réalisés des versions textuelles de ce jeu. Le programme devra permettre de visualiser la partie et de gérer un système de high-score.
 
 Si vous souhaitez développer une version graphique de votre programme, il est préférable de définir une version non graphique afin de bien séparer les fonctions associées au jeu et l'affichage graphique du jeu.
 
