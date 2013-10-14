@@ -1,0 +1,143 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[french]{babel}
+\usepackage{latexsym}
+\usepackage[T5,T1]{fontenc}
+\usepackage[pdftex]{hyperref}
+
+% Packages
+%----------
+\ExecuteOptions{textures}
+%\usepackage{epic,eepic}
+\usepackage{epsfig}
+%\usepackage{fullpage}
+
+\setlength{\textwidth}{150mm}     %
+\setlength{\oddsidemargin}{10mm}  % Please
+\setlength{\topmargin}{0mm}       %
+\setlength{\textheight}{200mm}    % do not
+\setlength{\headheight}{0mm}     %
+\setlength{\headsep}{0mm}        % modify
+\setlength{\topskip}{0in}         %
+\def\thepage{}
+% Macros
+%----------
+%\setlength{\textwidth}{}
+\setlength{\textheight}{240mm}
+\newcommand{\COMMENT}[1]{}
+
+%% Le titre du papier
+\title{Module 1106 : \textsc{Projet Algorithmique-Programmation \\ Ricochets Robots}}
+\author{IUT CAEN -- Département Informatique}
+
+\begin{document}
+\maketitle
+\bibliographystyle{plain}
+\pagestyle{empty}
+
+\section{Description du projet}
+
+On se propose de réaliser une variante du jeu {\bf Ricochets Robots} : \url{https://fr.wikipedia.org/wiki/Ricochet_Robots}.
+Il s'agit d'un jeu de plateau qui peut se jouer seul ou à plusieurs.
+
+Le jeu se joue sur une grille fermée de 16 par 16 cellules avec 4 robots de couleurs différentes (rouge, vert,
+bleu, gris), un ensemble d'obstacles (murs) et une cible qui se trouve dans une cellule de la grille.
+
+Pour déplacer un robot, le joueur choisit une direction (Nord, Sud, Est, Ouest) et le robot
+se déplace en ligne droite jusqu'à rencontrer un obstacle ou un robot. Le but du jeu
+est de déplacer chacun à leur tour les 4 robots afin d'atteindre la cible en s'aidant éventuellement des autres robots. Voir des exemples de grilles de jeu ici :
+\url{http://jeux.prise2tete.fr/p2t-ricochet/p2t-ricochet.php5}.
+
+Seul sont autorisés des versions textuelles de ce jeu.
+Le programme devra permettre de visualiser la partie et de gérer un
+système de high-scores.
+
+Les grilles seront construites de manière aléatoire ou bien éditée par
+un utilisateur. Un mode joueur aléatoire pourra être implémenté.
+
+La version complète du jeu décrite ici :
+\url{https://fr.wikipedia.org/wiki/Ricochet_Robots} pourra être réalisée dans un deuxième temps.
+
+Votre programme devra permettre de visualiser une séquence de jeu en affichant à chaque tour : le plateau de jeu, qui doit jouer (dans le cas de la version à plusieurs joueurs), le score des joueurs.
+
+Pour ceux qui veulent aller plus loin, vous pouvez réaliser au choix
+: des graphiques avec animation, une version en 3D, une version pour
+jouer à plusieurs en réseau, une version pour jouer à plusieurs sur Internet.
+
+\section{Notes de mise en {\oe}uvre}
+
+Dans un premier temps, définissez les principales structures de données dont vous allez avoir besoin pour représenter les éléments du jeu: plateau de jeu, informations sur les joueurs et gestionnaire de jeu (contenant les informations globales concernant l'état du jeu courant). Pour chaque structure de données, définir les données correspondantes et les fonctions associées.
+
+Dans un deuxième temps, définir la boucle de contrôle globale du jeu qui assurent les différentes phases du jeu.
+
+Pour les besoins du jeu, il pourra être utile de définir un joueur aléatoire qui joue aléatoirement.
+
+Il est conseillé d'avoir en permanence un programme qui compile et qui définit une version partielle du jeu.
+
+Si vous souhaitez développer une version graphique de votre programme, il est préférable de définir une version non graphique afin de bien séparer les fonctions associées au jeu et l'affichage graphique du jeu.
+
+\section{Travail à rendre}
+Le projet est à réaliser en binômes (ou, avec l'accord de votre chargé de TP, en monôme). Le travail à rendre est un projet sous forme d'une archive zip {\bf à déposer sur la plateforme Filex à l'adresse suivante: \url{http://ent.unr-runn.fr}}. 
+
+La procédure pour déposer votre projet est la suivante :
+\begin{itemize}
+\item sélectionner Université de Caen Basse Normandie puis renseigner les identifiant et mot de passe de votre messagerie universitaire.
+\item cliquer sur le lien Dépôt de fichiers. Télécharger depuis votre ordinateur le fichier à transmettre dans le champ Parcourir puis Envoyer. 
+\item l'envoi du document génère une fenêtre avec un lien direct vers celui-ci. Copier ce lien pour l'insérer dans un mail adressé à votre enseignant chargé de TP. 
+\end{itemize}
+\noindent
+Le nom de l'archive doit avoir la forme suivante~: \texttt{Nom1Nom2.grTP.zip} ou 
+\texttt{Nom1.grTP.zip} où \texttt{Nom1} et \texttt{Nom2} sont les noms de 
+famille des membres des polynômes et \texttt{grTP} est le nom du groupe de TP 
+auquel ils appartiennent (1.1, 1.2, etc.).
+\noindent
+{\bf Note}: Lors des séances de TP, les enseignants chargés de TP suivront l'avancement de votre projet et pourront vous aider sur certains points difficiles.
+
+\subsection*{Ce qu'il faut rendre~:}
+\begin{itemize}
+\item Le code source complet de votre application en C largement commenté.
+
+\item Un exécutable testé \textbf{sous Linux} et opérationnel avec sa documentation d'installation et d'utilisation. 
+
+\underline{\bf ATTENTION} :
+si votre programme fait appel à d'autres librairies externes (comme par exemple 
+la librairie SDL), il est impératif de les inclure pour les besoins de test. 
+
+\item Un court rapport d'une longueur comprise entre 3 et 10 pages présentant :
+  \begin{itemize}
+    \item les fonctionnalités implémentées (très brièvement).
+    \item organisation du programme : découpage en fonctions, rôle de 
+      ces fonctions, explications du programme. 
+    \item l'organisation et la répartition des tâches au sein du binôme 
+      durant la durée du projet (brièvement).
+    \item bilan qualitatif du travail, difficultés rencontrées, points qui 
+      vous ont paru intéressants. 
+    \item un mode d'emploi avec quelques illustrations (p. ex. capture d'écrans, 
+      scénario d'exécution...), destinées à montrer l'opérationnalité 
+      de votre application.
+    \item Une conclusion sur l'apport (ou non) du projet en termes technique,
+      scientifique, humain. 
+  \end{itemize}
+
+\textbf{Le code source ne doit pas faire partie du rapport d'une dizaine de pages 
+(sinon en annexe)}.
+\end{itemize}
+
+\section{Évaluation du projet et calendrier}
+
+Le projet est à rendre le \underline{\bf XX janvier 2014} 
+(tout retard conduira à des pénalités). L'évaluation sera réalisée en fonction 
+des critères ci-dessous~:
+\begin{itemize}
+
+\item  \textit{qualité technique du code}~: découpage en fonctions, modularité et réutilisabité, instructions, algorithmes, efficacité, gestion des erreurs lors de saisies, ou lorsque les données fournies en paramètres des fonctions sont incorrectes.
+
+\item \textit{lisibilité du code}~: présentation du programme (indentation), usage de variables et de fonctions ayant des noms explicites, commentaires pour préciser les points difficiles dans les algorithmes, paramètres des fonctions $\ldots$ 
+
+\item \textit{documentation fournie}~: organisation du programme et son mode d'emploi, bilan.
+
+\item \textit{présentation orale}~: démonstration du programme et questions sur le travail réalisée.
+
+\end{itemize}
+\end{document}
