@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 	//	char phrase1[]="ordinateur\0";
 	//	char phrase2[]="dur notaire\0";
 	// Test 2
-	char phrase1[]="orxinateur\0";
+	char phrase1[]="ordinateur\0";
 	char phrase2[]="dur notaire\0";
 
 	int i,j;
