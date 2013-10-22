@@ -21,6 +21,7 @@ int main(void)
   printf("b=?");
   scanf("%d", &b);
   
-  printf("pgcd(%d, %d) = %d\n", a, b, pgcd(a,b));
+  printf("pgcd(%d, %d) = %d\n", 
+    a, b, pgcd(a,b));
   printf("a = %d, b= %d\n", a, b);
 }

@@ -6,14 +6,14 @@ int compare(char a[], char b[]){
 	// Retourne -1 si a < b
 	int i = 0; // indique le caractère courant
 
-	while ((a[i]!=0)&&(b[i]!=0)){
+	while ((a[i]!='\0')&&(b[i]!='\0')){
 		if (a[i] == b[i]) i++;
 		if (a[i] > b[i]) return 1;
 		if (a[i] < b[i]) return -1;}
 	return 0;
 }
 
-int main(int argc, char const *argv[])
+int main(void)
 {
 	char ch1[6]="Hello\0";
 	char ch2[8]="Bonjour\0";
